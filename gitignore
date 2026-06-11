@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+*.egg-info/
+
+# Large model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Calibration binary
+*.pkl
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Gradio temp files
+.gradio/
+
+# Large dataset - only keep structure
+dataset/card segment.v1i.coco-segmentation/train/
+dataset/card segment.v1i.coco-segmentation/valid/
