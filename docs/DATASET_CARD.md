@@ -125,3 +125,82 @@ Augmentation was applied to the training split only to artificially increase dat
 **Format:** COCO Segmentation JSON
 
 Dataset exported from Roboflow via API in COCO segmentation format for compatibility with HuggingFace Transformers and the Mask2Former training pipeline.
+
+---
+
+## 8. Roboflow Dataset
+
+**Roboflow Project:** Card Segment  
+**Workspace:** object-detection-sn8ac  
+**License:** CC BY 4.0  
+**Dataset URL:** https://universe.roboflow.com/object-detection-sn8ac/card-segment  
+**Browse Images:** https://app.roboflow.com/object-detection-sn8ac/card-segment/browse
+
+**Project Link:** [View on Roboflow Universe](https://universe.roboflow.com/object-detection-sn8ac/card-segment)
+
+The dataset is publicly available on Roboflow Universe and can be accessed for viewing, cloning, or forking. All 71 images with their polygon segmentation annotations are hosted on the Roboflow platform.
+
+---
+
+## 9. Dataset Usage
+
+### Download from Roboflow
+
+```bash
+# Install Roboflow SDK
+pip install roboflow
+
+# Download dataset
+python -c "
+from roboflow import Roboflow
+rf = Roboflow(api_key='your_api_key')
+project = rf.workspace('object-detection-sn8ac').project('card-segment')
+dataset = project.versions(1).download('coco')
+"
+```
+
+### Local Dataset Structure
+
+The dataset in this repository is organized as:
+
+```
+dataset/
+└── card segment.v1i.coco-segmentation/
+    ├── README.dataset.txt
+    ├── README.roboflow.txt
+    ├── train/
+    │   └── _annotations.coco.json
+    ├── valid/
+    │   └── _annotations.coco.json
+    └── test/
+        └── _annotations.coco.json
+```
+
+---
+
+## 10. Citation
+
+If you use this dataset in your research or project, please cite:
+
+```bibtex
+@dataset{card-segment,
+  title={Card Segment Instance Segmentation Dataset},
+  author={Your Name},
+  year={2026},
+  organization={Roboflow Universe},
+  url={https://universe.roboflow.com/object-detection-sn8ac/card-segment}
+}
+```
+
+---
+
+## 11. License
+
+This dataset is licensed under **CC BY 4.0** (Creative Commons Attribution 4.0 International).
+
+**You are free to:**
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material for any purpose, even commercially
+
+**Under the following terms:**
+- Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made
