@@ -51,7 +51,7 @@ xis-cv-assessment/
 │
 ├── Calibration/
 │   ├── images/                          # 26 checkerboard calibration photos
-│   ├── calibrate.py                     # Camera calibration script
+│ 
 │   ├── Calibration_checkerboard.ipynb   # Calibration notebook
 │   ├── calibration.pkl                  # Saved camera parameters
 │   ├── calibration_report.txt           # Calibration results
