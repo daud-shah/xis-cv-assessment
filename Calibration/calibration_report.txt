@@ -1,0 +1,17 @@
+CAMERA CALIBRATION REPORT
+==================================================
+Camera:              Infinix Note 50
+Checkerboard Size:   (8, 6)
+Square Size:         15.0 mm
+Images Used:         17/26
+Reprojection Error:  0.3928 px
+Quality:             GOOD
+
+Camera Matrix:
+[[3.00257282e+03 0.00000000e+00 2.02468852e+03]
+ [0.00000000e+00 3.01523921e+03 1.53257696e+03]
+ [0.00000000e+00 0.00000000e+00 1.00000000e+00]]
+
+Distortion Coefficients:
+[[ 8.19826967e-02 -6.14731712e-01  7.61285714e-04 -2.01583468e-03
+   9.27570455e-01]]
